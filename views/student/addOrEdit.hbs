@@ -1,0 +1,54 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/student" method="post" autocomplete="off">
+  <input type="hidden" name="_id" value="{{student._id}}" />
+  <div class="mb-3">
+    <label for="fullName" class="form-label">Full name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="fullName"
+      value="{{student.fullName}}"
+      name="fullName"
+      required=""
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      value="{{student.email}}"
+      name="email"
+      required=""
+    />
+  </div>
+  <div class="mb-3">
+    <label for="mobile" class="form-label">Mobile phone</label>
+    <input
+      type="number"
+      class="form-control"
+      id="mobile"
+      value="{{student.mobile}}"
+      name="mobile"
+      required=""
+    />
+  </div>
+  <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input
+      type="text"
+      class="form-control"
+      id="city"
+      value="{{student.city}}"
+      name="city"
+      required=""
+    />
+  </div>
+  <div class="mb-3">
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/student/list" class="btn btn-dark">View All</a>
+  </div>
+</form>
